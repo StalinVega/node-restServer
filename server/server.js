@@ -22,7 +22,7 @@ mongoose.connect('mongodb://localhost:27017/cafe',(err,res)=>{
     if(err) throw err;
     console.log('Base de datos online');
 });
-
+//Hacemos el llamado al puerto por donde se deploya nuestra aplicacion
 app.listen(process.env.PORT,()=>{
     console.log("Escuchando en el puerto", process.env.PORT);
 });

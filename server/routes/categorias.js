@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const Categoria = require('../models/categorias');
 
+//
 app.post('/categorias',function(req,res){
 
     let body = req.body

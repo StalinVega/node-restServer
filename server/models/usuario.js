@@ -1,12 +1,14 @@
 const mongoose = require('mongoose');
 const beautifyUnique = require('mongoose-beautiful-unique-validation');
 
+
 let rolesValidos = {
     values: ['ADMIN_ROLE', 'USER_ROLE'],
     message: '{VALUE} no es un rol válido'
 };
 
 //es un objeto Schema
+//este obejeto va ser en nuestra base de datos una tabla donde va a tener los campos que definamos
 let Schema = mongoose.Schema; 
 
 let usuarioSchema = new Schema({

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 //es un objeto Schema
+//este obejeto va ser en nuestra base de datos una tabla donde va a tener los campos que definamos
 let Schema = mongoose.Schema; 
 
 let productosSchema = new Schema({

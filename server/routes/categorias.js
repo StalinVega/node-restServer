@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const Categoria = require('../models/categorias');
 
-//
+// esta ruta con metodo Post donde hago un pedido al servidor
 app.post('/categorias',function(req,res){
 
     let body = req.body

@@ -4,6 +4,8 @@ const Usuario = require('../models/usuario');
 const bcrypt = require('bcryptjs');
 const _= require('underscore');
 
+
+// esta ruta con metodo get donde le digo al servidor que quiero mostrar algo
 app.get('/usuario',function(req,res){
 let desde = req.query.desde | 0;
 desde = Number(desde);
@@ -33,7 +35,7 @@ limite = Number(limite);
     });
 
 });
-
+// esta ruta con metodo Post especifico que en obtengo los datos y los guardo en la BDD
 app.post('/usuario',function(req,res){
 
     let body = req.body;
@@ -82,6 +84,7 @@ app.put('/usuario/:id',function(req,res){ //dentro de la url voy a recibir un pa
     });
 });
 
+//// esta ruta con metodo delete donde voy a eleminir dependiendo el id del usuario
 app.delete('/usuario/:id',function(req,res){
     let id = req.params.id;
 
